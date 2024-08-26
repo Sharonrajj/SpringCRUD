@@ -39,7 +39,7 @@ public class UserRepository {
             // Insert new user
             jdbcTemplate.update("INSERT INTO user (name, address) VALUES (?, ?)",
                 user.getName(), user.getAddress());
-            return user; // Optionally, you might want to query the ID back if needed
+            return user;
         }
     }
 
